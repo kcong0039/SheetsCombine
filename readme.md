@@ -11,13 +11,20 @@
 ```bash
 git clone https://github.com/kcong0039/SheetsCombine.git
 cd SheetsCombine
+```
 
 ###2. Create a virtual environment:
+```bash
 python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 
 ###3 Install the project locally:
+```bash
 pip install -e
+```
 
 ###4 Run:
+```bash
 SheetsCombine
+```
