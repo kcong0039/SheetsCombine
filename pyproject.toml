@@ -1,0 +1,28 @@
+[project]
+name = "SheetsCombine"
+version = "0.1.0"
+description = "Combine multiple CSV files into one Excel file with separate sheets."
+authors = [
+    { name = "Your Name", email = "you@example.com" }
+]
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.8"
+dependencies = [
+    "pandas>=2.0.0",
+    "XlsxWriter>=3.0.0",
+    "Pathlib"
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+sheetscombine = "SheetsCombine.__main__:main"

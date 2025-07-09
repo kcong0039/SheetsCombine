@@ -1,0 +1,2 @@
+[console_scripts]
+sheetscombine = SheetsCombine.__main__:main
